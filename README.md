@@ -10,27 +10,32 @@ Este repositório contém minha resolução para o desafio de programação prop
  
 | # | Nome do problema | Link | Dificuldade |
 |---|-----------------|------|-------------|
-| 1 | Nome do Problema | [Ver no Codeforces](https://codeforces.com/...) | 800 |
+| 1 | Melância | [Ver no Codeforces](https://codeforces.com/problemset/problem/4/A) | 800 |
 | 2 | Nome do Problema | [Ver no Codeforces](https://codeforces.com/...) | 1000 |
 | 3 | Nome do Problema | [Ver no Codeforces](https://codeforces.com/...) | 1200 |
- 
-<!-- Remova as linhas dos problemas que não foram resolvidos caso tenha escolhido menos de 3.-->
- 
+
 ---
  
-## Problema 1 — [Nome do Problema]
+## Problema 1 — [Melância]
  
 ### O que o problema pede?
-<!-- Explique com suas próprias palavras o que o problema pede. Não copie o enunciado. -->
- 
+ Encontrar uma maneira de dividir o peso da melância entre dois amigos e informar se a divisão resulta em números pares.
  
 ### Como eu resolvi?
-<!-- Descreva a estratégia que você usou. Por exemplo: ordenei a lista, filtrei os negativos, etc. -->
- 
+Usando a função MOD2 (%) para identificar se o peso da melância é um número par e maior que zero. 
  
 ### Código
-```python
-# Cole seu código aqui
+```
+# def solve():
+    peso_melancia = int(input())
+
+    if peso_melancia % 2 == 0 and peso_melancia > 2:
+        print("YES")
+    else:
+        print("NO")
+
+if __name__ == "__main__": 
+    solve()
 ```
  
 ---
@@ -70,21 +75,21 @@ Este repositório contém minha resolução para o desafio de programação prop
 ## IA utilizada
  
 **Qual IA você usou?**
-<!-- Ex: Claude, ChatGPT, Gemini... -->
- 
+Usei o Gemini para identificar o erro de processamento na plataforma Codeforces.
+
 **Como a IA te ajudou?**
-<!-- Descreva como você usou a IA no processo. Ela explicou o problema? Sugeriu uma estratégia? Ajudou a corrigir um erro? -->
- 
+
+ < Ela me ajudou a remover a interação textual com o usuário para que a entrada fosse numérica e a saída YES ou NO.
 ---
  
 ## Reflexão
  
 ### Dificuldades encontradas
-<!-- O que foi mais difícil? Entender o problema? Escrever o código? Usar o GitHub? -->
+<!-- O que foi mais difícil foi entender o problema e realizar a operação de forma que a saída fosse correspondente ao teste.-->
  
  
 ### O que aprendi
-<!-- O que você aprendeu de novo com este desafio? Pode ser sobre programação, sobre usar IA, ou qualquer coisa. -->
+<!-- Aprendi que mesmo que a lógica do meu código esteja correta e funcional no VSCode, pode não ser aceito na plataforma do Codeforces. A forma como são feitos os testes impõe a necessidade de correspondencia no input e output. -->
  
  
 ### Como foi a experiência?
