@@ -1,92 +1,61 @@
 ﻿# Desafio Codeforces — Mentoria Codificadas | Além do Código
- 
+
 ## Sobre este repositório
- 
-Este repositório contém minha resolução para o desafio de programação proposto na mentoria, utilizando problemas da plataforma [Codeforces](https://codeforces.com/) com auxílio de Inteligência Artificial.
- 
----
- 
-## Problemas escolhidos
- 
-| # | Nome do problema | Link | Dificuldade |
-|---|-----------------|------|-------------|
-| 1 | Nome do Problema | [Ver no Codeforces](https://codeforces.com/...) | 800 |
-| 2 | Nome do Problema | [Ver no Codeforces](https://codeforces.com/...) | 1000 |
-| 3 | Nome do Problema | [Ver no Codeforces](https://codeforces.com/...) | 1200 |
- 
-<!-- Remova as linhas dos problemas que não foram resolvidos caso tenha escolhido menos de 3.-->
- 
----
- 
-## Problema 1 — [Nome do Problema]
- 
-### O que o problema pede?
-<!-- Explique com suas próprias palavras o que o problema pede. Não copie o enunciado. -->
- 
- 
-### Como eu resolvi?
-<!-- Descreva a estratégia que você usou. Por exemplo: ordenei a lista, filtrei os negativos, etc. -->
- 
- 
-### Código
-```python
-# Cole seu código aqui
-```
- 
----
- 
-## Problema 2 — [Nome do Problema]
- 
-### O que o problema pede?
- 
- 
-### Como eu resolvi?
- 
- 
-### Código
-```python
-# Cole seu código aqui
-```
- 
----
- 
-## Problema 3 — [Nome do Problema]
- 
-### O que o problema pede?
- 
- 
-### Como eu resolvi?
- 
- 
-### Código
-```python
-# Cole seu código aqui
-```
- 
-<!-- Remova as linhas dos problemas que não foram resolvidos caso tenha escolhido menos de 3.-->
+
+Este repositório contém minha resolução para o desafio final de programação proposto na mentoria, utilizando problemas da plataforma [Codeforces](https://codeforces.com/) com auxílio de Inteligência Artificial.
 
 ---
- 
+
+## Problemas escolhidos
+
+| # | Nome do problema | Link | Dificuldade |
+|---|------------------|------|-------------|
+| 1 | Melancia         | [Ver no Codeforces](https://codeforces.com/problemset/problem/4/A) | 800              |
+
+---
+
+## Problema 1 — [Watermelon]
+
+### O que o problema pede?
+<!-- Desafio de dois amigos que querem dividir a melância em duas partes de modo que o peso deve ser número par diferente de zero. -->
+
+### Como eu resolvi?
+<!-- Primeiro, defini uma função para receber o peso da melância. Em seguida, apliquei o método de dividir por 2. Se o resultado for igual a zero, o peso é par, então imprime YES. Senão, o peso é impar e imprime NO. Ao final a função se autoinvoca. -->
+
+### Código
+
+```Python
+# def solve():
+    # Remova a frase de dentro do input()
+    peso_melancia = int(input())
+    
+    if peso_melancia % 2 == 0 and peso_melancia > 2:
+        print("YES")
+    else:
+        print("NO")
+
+if __name__ == "__main__":
+    solve()
+```
+
 ## IA utilizada
- 
+
 **Qual IA você usou?**
-<!-- Ex: Claude, ChatGPT, Gemini... -->
- 
+<!-- Usei Github Copilot na IDE do VsCode para identificar erros no código e escrever de forma simples com boas práticas de programação. Ao enviar meu código na Codeforces, o mesmo não foi aceito. Gemini me explicou onde estava o erro-->
+
 **Como a IA te ajudou?**
 <!-- Descreva como você usou a IA no processo. Ela explicou o problema? Sugeriu uma estratégia? Ajudou a corrigir um erro? -->
- 
+
 ---
- 
+
 ## Reflexão
- 
+
 ### Dificuldades encontradas
 <!-- O que foi mais difícil? Entender o problema? Escrever o código? Usar o GitHub? -->
- 
- 
+
 ### O que aprendi
 <!-- O que você aprendeu de novo com este desafio? Pode ser sobre programação, sobre usar IA, ou qualquer coisa. -->
- 
- 
+
 ### Como foi a experiência?
 <!-- Conta um pouco como foi no geral. O que mais gostou? O que mudaria? -->
 README.md
